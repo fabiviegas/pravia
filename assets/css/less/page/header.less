@@ -1,0 +1,146 @@
+// out: false
+
+.page__header {
+    position: fixed;
+    width: 100%;
+    background-color: #111;
+    padding: 18px 0;
+
+    .wrapper {
+        max-width: 1225px;
+        padding: 0 24px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+
+        .logo { 
+            width: 178px; 
+            
+            img {
+                width: 100%;
+            }
+        }
+
+        .is--desktop {
+
+            .links {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 42px;
+
+                a {
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.8px;
+                    line-height: normal;
+                    transition: all linear .15s;
+                    color: #F7f7f7;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #4F8F95;
+                    }
+                }
+            }
+        }
+
+        .is--mobile {
+            display: none;
+        }
+    }
+
+
+
+    @media screen and (max-width: @tablet) {
+
+        .wrapper {
+            padding: 24px 28px;
+
+            .logo {
+                width: 140px;
+            }
+
+            .is--mobile {
+                display: block;
+                flex-grow: 0;
+
+                .navbar__hamburguer {
+                    display: flex;
+                    justify-content: flex-end;
+                    width: fit-content;
+
+                    img {
+                        width: fit-content;
+                    }
+                }
+
+                .navbar__overlay {
+                    background-image: url('../img/bg-services.png'), linear-gradient(#FF8C39, #FF5C5C);
+                    background-position: bottom 0 right 0;
+                    background-repeat: no-repeat;
+                    z-index: 3001;
+                    display: none;
+                    .animation__fade_in_right();
+
+                    &.open {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        width: 100%;
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        overflow: hidden !important;
+                        transition: all linear 0.5s;
+
+                        .overlay__content {
+                            overflow-y: auto !important;
+                            height: 90%;
+
+                            .overlay__header {
+                                display: flex;
+                                justify-content: flex-end;
+                                margin: 30px 30px 109px 30px;
+
+                                .overlay__close {
+                                    width: fit-content;
+                                }
+                            }
+
+                            .overlay__menu {
+                                margin: 0;
+
+                                .overlay__links {
+                                    gap: 12px;
+                                    margin-bottom: 64px;
+
+                                    a {
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        text-align: center;
+                                        color: #f7f7f7;
+                                    }
+                                }
+
+                               
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            .is--desktop {
+                display: none;
+            }
+
+
+        }
+
+
+    }
+}
