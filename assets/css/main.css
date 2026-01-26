@@ -604,6 +604,112 @@ nav {
   width: 150px;
   margin-bottom: -12px;
 }
+.page__services {
+  padding: 100px 0 32px 0;
+}
+.page__services .wrapper {
+  max-width: 1275px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.page__services .wrapper .title {
+  color: #519397;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+.page__services .wrapper .title__services {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.page__services .wrapper .services__list--desktop {
+  background-image: url('../img/services-bg.png');
+  background-repeat: no-repeat;
+  background-size: calc(100% - 40px) 100%;
+  background-position: bottom left;
+  position: relative;
+  height: 415px;
+}
+.page__services .wrapper .services__list--desktop .service {
+  position: absolute;
+}
+.page__services .wrapper .services__list--desktop .service-1 {
+  top: 156px;
+  left: 36px;
+  width: 266px;
+  height: 180px;
+}
+.page__services .wrapper .services__list--desktop .service-1 .service__content {
+  position: relative;
+}
+.page__services .wrapper .services__list--desktop .service-1 .service__content .service__name {
+  color: #F7F7F7;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 134%;
+}
+.page__services .wrapper .services__list--desktop .service-1 .service__content .icon__plus {
+  position: absolute;
+  bottom: -44px;
+  left: 0;
+}
+.page__services .wrapper .services__list--desktop .service-2 .service__content,
+.page__services .wrapper .services__list--desktop .service-3 .service__content,
+.page__services .wrapper .services__list--desktop .service-4 .service__content,
+.page__services .wrapper .services__list--desktop .service-5 .service__content {
+  position: relative;
+}
+.page__services .wrapper .services__list--desktop .service-2 .service__content .service__texts,
+.page__services .wrapper .services__list--desktop .service-3 .service__content .service__texts,
+.page__services .wrapper .services__list--desktop .service-4 .service__content .service__texts,
+.page__services .wrapper .services__list--desktop .service-5 .service__content .service__texts {
+  position: absolute;
+}
+.page__services .wrapper .services__list--desktop .service-2 .service__content .service__texts .service__name,
+.page__services .wrapper .services__list--desktop .service-3 .service__content .service__texts .service__name,
+.page__services .wrapper .services__list--desktop .service-4 .service__content .service__texts .service__name,
+.page__services .wrapper .services__list--desktop .service-5 .service__content .service__texts .service__name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 134%;
+}
+.page__services .wrapper .services__list--desktop .service-2 .service__content .service__texts .service__description,
+.page__services .wrapper .services__list--desktop .service-3 .service__content .service__texts .service__description,
+.page__services .wrapper .services__list--desktop .service-4 .service__content .service__texts .service__description,
+.page__services .wrapper .services__list--desktop .service-5 .service__content .service__texts .service__description {
+  font-size: 18px;
+  line-height: 132%;
+}
+.page__services .wrapper .services__list--desktop .service-2 .service__content .icon__plus,
+.page__services .wrapper .services__list--desktop .service-3 .service__content .icon__plus,
+.page__services .wrapper .services__list--desktop .service-4 .service__content .icon__plus,
+.page__services .wrapper .services__list--desktop .service-5 .service__content .icon__plus {
+  position: absolute;
+}
+.page__services .wrapper .services__list--desktop .service-2 .service__content .service__texts {
+  left: 346px;
+  top: 16px;
+  width: 534px;
+}
+.page__services .wrapper .services__list--desktop .service-3 .service__content .service__texts {
+  left: 376px;
+  top: 112px;
+  width: 696px;
+}
+.page__services .wrapper .services__list--desktop .service-4 .service__content .service__texts {
+  left: 376px;
+  top: 232px;
+  width: 710px;
+}
+.page__services .wrapper .services__list--desktop .service-5 .service__content .service__texts {
+  left: 346px;
+  top: 348px;
+  width: 716px;
+}
 .testimonials {
   padding-top: 62px;
   padding-bottom: 120px;
