@@ -358,19 +358,13 @@ nav {
   }
 }
 .page__hero {
-  background-color: #F7F7F7;
-  background-image: linear-gradient(#111, #111);
-  background-size: 100% 150px;
-  background-position: left 0 bottom 0;
-  background-repeat: no-repeat;
-  padding-bottom: 16px;
-}
-.page__hero .wrapper {
-  background-color: #E7EBF1;
   background-image: url('../img/hero-bg.png');
   background-repeat: no-repeat;
   background-position: bottom 0 right 0;
   background-size: auto 616px;
+  padding-bottom: 16px;
+}
+.page__hero .wrapper {
   margin: 0 16px 16px 16px;
   padding: 220px 90px 42px 90px;
 }
@@ -426,23 +420,14 @@ nav {
   width: 150px;
 }
 .page__name {
-  padding: 72px 16px;
-  background-image: linear-gradient(#111, #111);
-  background-size: 100% 150px;
-  background-position: left 0 bottom 0;
-  background-repeat: no-repeat;
-}
-.page__name .wrapper {
-  max-width: 1175px;
-  margin: 0 auto;
+  margin: 100px 0 38px 0;
   background-image: linear-gradient(to bottom, #509195, #264462), linear-gradient(to bottom, #2A4C69, #1B2D40);
   background-repeat: no-repeat;
   background-size: 50% 100%, calc(50% + 1px) 100%;
   background-position: left top, right top;
-  padding-top: 52px;
-  padding-bottom: 24px;
+  padding-top: 42px;
 }
-.page__name .wrapper .title {
+.page__name .title {
   margin-bottom: 42px;
   text-align: center;
   padding: 6px 24px 4px 6px;
@@ -452,6 +437,12 @@ nav {
   letter-spacing: 0.8px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
+}
+.page__name .wrapper {
+  max-width: 1175px;
+  margin: 0 auto;
+  padding-top: 52px;
+  padding-bottom: 24px;
 }
 .page__name .wrapper .content {
   display: flex;
@@ -475,7 +466,6 @@ nav {
   display: flex;
   justify-content: space-between;
   gap: 72px;
-  margin-bottom: 48px;
 }
 .page__name .wrapper .content .name__definition .definition {
   display: flex;
@@ -505,32 +495,18 @@ nav {
 .page__name .wrapper .content .name__definition .definition.def-1 .text {
   max-width: 340px;
 }
-.page__name .wrapper .bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 0 82px 0 82px;
-}
-.page__name .wrapper .bottom .source {
+.page__name .wrapper .content .name__definition .definition.def-1 .source {
   color: #F7F7F7;
   font-size: 12px;
-}
-.page__name .wrapper .bottom .logo {
-  width: 136px;
+  margin-top: 92px;
 }
 .page__team {
   padding: 72px 16px;
-  background-image: linear-gradient(#111, #111);
-  background-size: 100% 150px;
-  background-position: left 0 bottom 0;
-  background-repeat: no-repeat;
-  background-color: #F7F7F7;
 }
 .page__team .wrapper {
   max-width: 1275px;
   margin: 0 auto;
-  background-color: #E7EBF1;
-  padding: 32px 40px 24px 40px;
+  padding: 32px 40px 60px 40px;
 }
 .page__team .wrapper .line {
   width: 100%;
@@ -606,7 +582,7 @@ nav {
   margin-bottom: -12px;
 }
 .page__services {
-  padding: 100px 0 32px 0;
+  padding-bottom: 0;
 }
 .page__services .wrapper {
   max-width: 1275px;
