@@ -249,6 +249,7 @@ nav {
   width: 100%;
   background-color: #111;
   padding: 18px 0;
+  z-index: 999;
 }
 .page__header .wrapper {
   max-width: 1225px;
@@ -629,7 +630,7 @@ nav {
 .page__services .wrapper .services__list--desktop {
   background-image: url('../img/services-bg.png');
   background-repeat: no-repeat;
-  background-size: calc(100% - 40px) 100%;
+  background-size: calc(100% - 40px) 415px;
   background-position: bottom left;
   position: relative;
   height: 415px;
@@ -654,8 +655,15 @@ nav {
 }
 .page__services .wrapper .services__list--desktop .service-1 .service__content .icon__plus {
   position: absolute;
-  bottom: -44px;
+  bottom: -48px;
   left: 0;
+  width: 22px;
+}
+.page__services .wrapper .services__list--desktop .service-2,
+.page__services .wrapper .services__list--desktop .service-3,
+.page__services .wrapper .services__list--desktop .service-4,
+.page__services .wrapper .services__list--desktop .service-5 {
+  width: 100%;
 }
 .page__services .wrapper .services__list--desktop .service-2 .service__content,
 .page__services .wrapper .services__list--desktop .service-3 .service__content,
@@ -689,26 +697,52 @@ nav {
 .page__services .wrapper .services__list--desktop .service-4 .service__content .icon__plus,
 .page__services .wrapper .services__list--desktop .service-5 .service__content .icon__plus {
   position: absolute;
+  width: 20px;
 }
 .page__services .wrapper .services__list--desktop .service-2 .service__content .service__texts {
   left: 346px;
   top: 16px;
   width: 534px;
 }
+.page__services .wrapper .services__list--desktop .service-2 .service__content .icon__plus {
+  right: 214px;
+  top: 25px;
+}
 .page__services .wrapper .services__list--desktop .service-3 .service__content .service__texts {
   left: 376px;
   top: 112px;
   width: 696px;
+}
+.page__services .wrapper .services__list--desktop .service-3 .service__content .icon__plus {
+  right: 142px;
+  top: 132px;
 }
 .page__services .wrapper .services__list--desktop .service-4 .service__content .service__texts {
   left: 376px;
   top: 232px;
   width: 710px;
 }
+.page__services .wrapper .services__list--desktop .service-4 .service__content .icon__plus {
+  right: 142px;
+  top: 252px;
+}
 .page__services .wrapper .services__list--desktop .service-5 .service__content .service__texts {
   left: 346px;
   top: 348px;
   width: 716px;
+}
+.page__services .wrapper .services__list--desktop .service-5 .service__content .icon__plus {
+  right: 214px;
+  top: 362px;
+}
+.page__services .wrapper .services__list--desktop .vertical__text {
+  position: absolute;
+  right: -83px;
+  top: 199px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  transform: rotate(-90deg);
 }
 .testimonials {
   padding-top: 62px;
@@ -1049,4 +1083,8 @@ body {
   background-color: #E7EBF1;
   font-family: "Raleway", sans serif;
   color: #274665;
+}
+main,
+section {
+  padding-top: 100px;
 }
