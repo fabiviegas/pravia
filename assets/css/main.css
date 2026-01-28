@@ -435,6 +435,7 @@ nav {
   letter-spacing: 0.8px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
+  font-size: 32px;
 }
 .page__name .wrapper {
   max-width: 1175px;
@@ -513,7 +514,7 @@ nav {
 }
 .page__team .wrapper .content .title {
   color: #519397;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   letter-spacing: 0.8px;
   margin-top: 20px;
@@ -529,8 +530,7 @@ nav {
 .page__team .wrapper .content .team__cards--desktop .line {
   width: 90%;
   height: 3px;
-  background-image: linear-gradient(to right, #519296, #264462, #3B6B7D, #2E526D, #274665);
-  backdrop-filter: opacity(0.5);
+  background-image: linear-gradient(to right, hsl(183, 30%, 45%), #264462, #3B6B7D, #2E526D, #274665);
 }
 .page__team .wrapper .content .team__cards--desktop .cards {
   display: flex;
@@ -596,7 +596,7 @@ nav {
 }
 .page__services .wrapper .title {
   color: #519397;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   letter-spacing: 0.8px;
   margin-top: 20px;
@@ -724,6 +724,167 @@ nav {
   font-weight: 700;
   font-size: 16px;
   transform: rotate(-90deg);
+}
+.page__steps {
+  padding: 80px 0;
+}
+.page__steps .wrapper {
+  max-width: 1275px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+  position: relative;
+  height: 747px;
+}
+.page__steps .wrapper .title {
+  color: #519397;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  margin-bottom: 38px;
+}
+.page__steps .wrapper .description {
+  font-size: 18px;
+  line-height: 136%;
+  width: 412px;
+}
+.page__steps .wrapper .description span {
+  font-weight: 700;
+}
+.page__steps .wrapper .bg-steps {
+  width: 516px;
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 258px);
+  z-index: 1;
+}
+.page__steps .wrapper .step {
+  position: absolute;
+  z-index: 2;
+}
+.page__steps .wrapper .step .content {
+  position: relative;
+  display: flex;
+}
+.page__steps .wrapper .step .content .number {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #becfd5;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  z-index: 3;
+}
+.page__steps .wrapper .step .content .number .number__img {
+  width: 38px;
+}
+.page__steps .wrapper .step .content .arrow {
+  position: absolute;
+}
+.page__steps .wrapper .step .content .line {
+  position: absolute;
+  min-width: 390px;
+  height: 3px;
+  background-color: #becfd5;
+}
+.page__steps .wrapper .step .content .step__content .step__title {
+  color: #519397;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.page__steps .wrapper .step .content .step__content .step__title span {
+  font-weight: 700;
+}
+.page__steps .wrapper .step .content .step__content .step__subtitle {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 134%;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.page__steps .wrapper .step .content .step__content .step__text {
+  font-size: 12px;
+  line-height: 134%;
+}
+.page__steps .wrapper .step.step-1 {
+  top: -28px;
+  right: 148px;
+  height: 226px;
+}
+.page__steps .wrapper .step.step-1 .content {
+  width: 526px;
+  justify-content: flex-end;
+}
+.page__steps .wrapper .step.step-1 .content .number {
+  top: 20px;
+  left: 9px;
+}
+.page__steps .wrapper .step.step-1 .content .arrow {
+  top: 35px;
+  right: 325px;
+}
+.page__steps .wrapper .step.step-1 .content .line {
+  top: 34px;
+  right: 0;
+  width: 489px;
+}
+.page__steps .wrapper .step.step-1 .content .step__content {
+  width: 340px;
+}
+.page__steps .wrapper .step.step-2 {
+  top: 368px;
+  right: 9px;
+  height: 203px;
+}
+.page__steps .wrapper .step.step-2 .content {
+  width: 509px;
+  justify-content: flex-end;
+}
+.page__steps .wrapper .step.step-2 .content .number {
+  top: 6px;
+  left: 32px;
+}
+.page__steps .wrapper .step.step-2 .content .arrow {
+  top: -31px;
+  right: 432px;
+}
+.page__steps .wrapper .step.step-2 .content .line {
+  top: 33px;
+  right: 0;
+  width: 429px;
+}
+.page__steps .wrapper .step.step-2 .content .step__content {
+  width: 340px;
+}
+.page__steps .wrapper .step.step-3 {
+  top: 372px;
+  left: 67px;
+  height: 190px;
+}
+.page__steps .wrapper .step.step-3 .content {
+  width: 297px;
+  justify-content: flex-start;
+}
+.page__steps .wrapper .step.step-3 .content .number {
+  top: 1px;
+  right: -127px;
+}
+.page__steps .wrapper .step.step-3 .content .arrow {
+  top: -317px;
+  right: -257px;
+}
+.page__steps .wrapper .step.step-3 .content .line {
+  top: 33px;
+  left: 0;
+}
+.page__steps .wrapper .step.step-3 .content .step__content {
+  width: 316px;
 }
 .testimonials {
   padding-top: 62px;

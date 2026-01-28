@@ -1,0 +1,199 @@
+//out: false
+
+.page__steps {
+    padding: 80px 0;
+
+    .wrapper {
+        max-width: 1275px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 0 auto;
+        position: relative;
+        height: 747px;
+
+        .title {           
+            color: #519397;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            margin-bottom: 38px;
+        }
+
+        .description {
+            font-size: 18px;
+            line-height: 136%;
+            width: 412px;
+            
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .bg-steps {
+            width: 516px;
+            position: absolute;
+            top: 5px;
+            left: calc(50% - 258px);
+            z-index: 1;
+        }
+
+        .step {
+            position: absolute;
+            z-index: 2;
+
+            .content {
+                position: relative;
+                display: flex;
+
+                .number {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #becfd5;
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 100%;
+                    z-index: 3;
+                    
+                    .number__img {
+                        width: 38px;
+                    }
+                }
+
+                .arrow {
+                    position: absolute;
+                }
+
+                .line {
+                    position: absolute;
+                    min-width: 390px;
+                    height: 3px;
+                    background-color: #becfd5;
+                }
+
+                .step__content {
+                    .step__title {
+                        color: #519397;
+                        font-size: 20px;
+                        font-style: italic;
+                        margin-bottom: 24px;
+                        text-transform: uppercase;
+
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+
+                    .step__subtitle {
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        line-height: 134%;
+                        font-weight: 700;
+                        margin-bottom: 24px;
+                    }
+
+                    .step__text {
+                        font-size: 12px;
+                        line-height: 134%;
+                    }
+                }
+            }
+
+            &.step-1 {
+                top: -28px;
+                right: 148px;                 
+                height: 226px;
+
+                .content {
+                   width: 526px;
+                   justify-content: flex-end;
+
+                     .number {
+                        top: 20px;
+                        left: 9px;
+                    }
+
+                     .arrow {
+                         top: 35px;
+                         right: 325px;
+                     }
+
+                     .line {
+                        top: 34px;
+                        right: 0;
+                        width: 489px;
+                     }
+
+                     .step__content {
+                         width: 340px;
+                     }
+                }
+            }
+
+             &.step-2 {
+                top: 368px;
+                right: 9px;
+                height: 203px;
+
+                .content {
+                   width: 509px;                    
+                   justify-content: flex-end;
+
+                     .number {
+                        top: 6px;
+                        left: 32px;
+                    }
+
+                     .arrow {
+                         top: -31px;
+                         right: 432px;
+                         
+                     }
+
+                     .line {
+                        top: 33px;
+                        right: 0;
+                        width: 429px;
+                     }
+
+                     .step__content {
+                         width: 340px;
+                     }
+                }
+            }
+
+            &.step-3 {
+                top: 372px;
+                left: 67px;
+                height: 190px;
+
+                .content {
+                   width: 297px;                    
+                   justify-content: flex-start;
+
+                     .number {
+                        top: 1px;
+                        right: -127px;
+                    }
+
+                     .arrow {
+                         top: -317px;
+                         right: -257px;
+                     }
+
+                     .line {
+                        top: 33px;
+                        left: 0;
+                     }
+
+                     .step__content {
+                         width: 316px;
+                     }
+                }
+            }
+        }
+    }
+}
