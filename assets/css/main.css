@@ -189,8 +189,8 @@ nav {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  width: 85px;
-  height: 85px;
+  width: 65px;
+  height: 65px;
   background-color: #25D366;
   display: flex;
   justify-content: center;
@@ -248,7 +248,7 @@ nav {
   position: fixed;
   width: 100%;
   background-color: #111;
-  padding: 18px 0;
+  padding: 14px 0;
   z-index: 999;
 }
 .page__header .wrapper {
@@ -262,7 +262,7 @@ nav {
   gap: 60px;
 }
 .page__header .wrapper .logo {
-  width: 178px;
+  width: 158px;
 }
 .page__header .wrapper .logo img {
   width: 100%;
@@ -734,7 +734,7 @@ nav {
   padding-right: 16px;
   margin: 0 auto;
   position: relative;
-  height: 747px;
+  height: 600px;
 }
 .page__steps .wrapper .title {
   color: #519397;
@@ -793,23 +793,23 @@ nav {
 }
 .page__steps .wrapper .step .content .step__content .step__title {
   color: #519397;
-  font-size: 20px;
+  font-size: 24px;
   font-style: italic;
-  margin-bottom: 24px;
+  margin-bottom: 6px;
   text-transform: uppercase;
 }
 .page__steps .wrapper .step .content .step__content .step__title span {
   font-weight: 700;
 }
 .page__steps .wrapper .step .content .step__content .step__subtitle {
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
   line-height: 134%;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 .page__steps .wrapper .step .content .step__content .step__text {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 134%;
 }
 .page__steps .wrapper .step.step-1 {
@@ -830,7 +830,7 @@ nav {
   right: 325px;
 }
 .page__steps .wrapper .step.step-1 .content .line {
-  top: 34px;
+  top: 28px;
   right: 0;
   width: 489px;
 }
@@ -855,7 +855,7 @@ nav {
   right: 432px;
 }
 .page__steps .wrapper .step.step-2 .content .line {
-  top: 33px;
+  top: 28px;
   right: 0;
   width: 429px;
 }
@@ -880,7 +880,7 @@ nav {
   right: -257px;
 }
 .page__steps .wrapper .step.step-3 .content .line {
-  top: 33px;
+  top: 28px;
   left: 0;
 }
 .page__steps .wrapper .step.step-3 .content .step__content {
