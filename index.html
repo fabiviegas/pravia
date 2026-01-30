@@ -52,10 +52,12 @@
     <link rel="stylesheet" href="assets/libs/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css">
 
     <!-- Scripts -->
     <script defer src="assets/js/header__mobile.js"></script>
     <script defer src="assets/js/data-tabs-v4.js"></script>
+    <script defer src="assets/js/animate.js"></script>
 
 </head>
 
@@ -130,7 +132,7 @@
 
     <main class="page__hero" id="quemsomos">
         <div class="wrapper">
-            <div class="content">
+            <div class="content animate-on-scroll animate__fadeInLeft animate__slow">
 
                 <h1 class="title">PRÁVIA é uma consultoria de negócios <span>especializada em gerar resultados concretos e mensuráveis.</span>
                 </h1>
@@ -169,7 +171,7 @@
         <div class="wrapper">
             
 
-            <div class="content">
+            <div class="content animate-on-scroll animate__fadeInUp animate__slow">
                 <h3 class="name">PRA <span>+</span> VIA</h3>
                 <div class="name__definition">
                     <div class="definition def-1">
@@ -206,8 +208,8 @@
                             <p class="card__description">
                                 Tem uma trajetória marcada pelo pensamento analítico e experiência em estruturação de negócios. É especialista em transformar incerteza em plano, desafio em processo e traduzir grandes ambições em ações concretas.
                             </p>
-                            <a href="#" target="_blank" class="social__link">
-                                <img src="assets/img/icon-linkedin.png" class="icon" alt="Linkedin Rafael Manara">
+                            <a href="https://br.linkedin.com/in/rafael-manara" target="_blank" class="social__link">
+                               <img src="assets/img/icon-footer-3.svg" class="icon" alt="Linkedin Rafael Manara">
                             </a>
                         </div>
 
@@ -218,8 +220,8 @@
                             <p class="card__description">
                                 Combina visão estratégica com forte senso de execução. Com experiência em grandes empresas e projetos de transformação, sabe que nenhuma estratégia sobrevive sem competências, liderança e disciplina.
                             </p>
-                            <a href="#" target="_blank" class="social__link">
-                                <img src="assets/img/icon-linkedin.png" class="icon" alt="Linkedin Paulo Padovani">
+                            <a href="https://br.linkedin.com/in/paulo-padovani-9893aa44" target="_blank" class="social__link">
+                                <img src="assets/img/icon-footer-3.svg" class="icon" alt="Linkedin Paulo Padovani">
                             </a>
                         </div>
 
@@ -230,8 +232,8 @@
                             <p class="card__description">
                                 Trajetória sólida em estratégia, transformação comercial e marketing experiência do cliente e branding. Parceira desde os primeiros passos — trazendo escuta qualificada, visão sistêmica e pensamento provocador.
                             </p>
-                            <a href="#" target="_blank" class="social__link">
-                                <img src="assets/img/icon-linkedin.png" class="icon" alt="Linkedin Marô">
+                            <a href="https://br.linkedin.com/in/maria-eugenia-campacci-rocha-b3397a4" target="_blank" class="social__link">
+                                <img src="assets/img/icon-footer-3.svg" class="icon" alt="Linkedin Marô">
                             </a>
                         </div>
                     </div>
@@ -253,7 +255,9 @@
                 <div class="service service-1">
                     <div class="service__content">
                         <h4 class="service__name">1. Desenho e desdobramento da estratégia</h4>
-                        <img src="assets/img/icon-plus-white.svg" class="icon__plus" alt="Saiba mais">
+                        <div class="button__modal" data-toggle="modal" data-target="#modalService1">
+                            <img src="assets/img/icon-plus-white.svg" class="icon__plus" alt="Saiba mais">
+                        </div>
                     </div>
                 </div>
                 <div class="service service-2">
@@ -262,7 +266,9 @@
                             <h4 class="service__name">2. Desenvolvimento de pessoas</h4>
                             <p class="service__description">Mobilização, integração e treinamento</p>
                         </div>
-                        <img src="assets/img/icon-plus-blue.svg" class="icon__plus" alt="Saiba mais">
+                        <div class="button__modal" data-toggle="modal" data-target="#modalService2">
+                            <img src="assets/img/icon-plus-blue.svg" class="icon__plus" alt="Saiba mais">
+                        </div>
                     </div>
                 </div>
                 <div class="service service-3">
@@ -271,7 +277,9 @@
                             <h4 class="service__name">3. Ganho de eficiência e produtividade</h4>
                             <p class="service__description">Otimização de pessoas, estrutura organizacional, segmentação, modelagem analítica, IA e tecnologia</p>
                         </div>
-                        <img src="assets/img/icon-plus-blue.svg" class="icon__plus" alt="Saiba mais">
+                        <div class="button__modal" data-toggle="modal" data-target="#modalService3">
+                            <img src="assets/img/icon-plus-blue.svg" class="icon__plus" alt="Saiba mais">
+                        </div>
                     </div>
                 </div>
                 <div class="service service-4">
@@ -281,7 +289,9 @@
                             <p class="service__description">Inovação, modelo de negócios e white-spaces
                                 (novos produtos/serviços, canais, mercados, públicos)</p>
                         </div>
-                        <img src="assets/img/icon-plus-blue.svg" class="icon__plus" alt="Saiba mais">
+                        <div class="button__modal" data-toggle="modal" data-target="#modalService4">
+                            <img src="assets/img/icon-plus-blue.svg" class="icon__plus" alt="Saiba mais">
+                        </div>
                     </div>
                 </div>
                 <div class="service service-5">
@@ -290,13 +300,136 @@
                             <h4 class="service__name">5. Excelência em execução</h4>
                             <p class="service__description">Governança, aprendizados e adaptação on-the-go</p>
                         </div>
-                        <img src="assets/img/icon-plus-blue.svg" class="icon__plus" alt="Saiba mais">
+                        <div class="button__modal" data-toggle="modal" data-target="#modalService5">
+                            <img src="assets/img/icon-plus-blue.svg" class="icon__plus" alt="Saiba mais">
+                        </div>
                     </div>
                 </div>
 
                 <span class="vertical__text">ENTREGA DE RESULTADOS</span>
             </div>
         </div>
+
+        <!--MODALS-->
+        <div class="modal fade modal__product" tabindex="-1" aria-hidden="true" id="modalService1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="assets/img/icon-close.svg" class="icon" alt="Fechar">
+                    </button>
+                    <div class="modal-body">
+                        <div class="modal__heading">
+                            <p class="description">A PRÁVIA oferece soluções integradas e personalizadas em cinco grandes territórios de atuação, sempre com foco em transformar desafios em resultados concretos:</p>
+                        </div>
+                        
+                        <ul class="features__list">
+                            <h3 class="title__list">1. Desenho e desdobramento da estratégia</h3>
+                            <li>Desenho de estratégia</li>
+                            <li>Desdobramento da estratégia</li>
+                            <li>Modelagem de negócios</li>
+                        </ul>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal__product" tabindex="-1" aria-hidden="true" id="modalService2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="assets/img/icon-close.svg" class="icon" alt="Fechar">
+                    </button>
+                    <div class="modal-body">
+                        <div class="modal__heading">
+                            <p class="description">A PRÁVIA oferece soluções integradas e personalizadas em cinco grandes territórios de atuação, sempre com foco em transformar desafios em resultados concretos:</p>
+                        </div>
+                        
+                        <ul class="features__list">
+                            <h3 class="title__list">2. Desenvolvimento de pessoas</h3>
+                            <li>Cultura Organizacional</li>
+                            <li>Preparação de Liderança</li>
+                            <li>Desenvolvimento de Pessoas</li>
+                            <li>Avaliação de desempenho</li>
+                            <li>Clima Organizacional Gestão da Mudança</li>
+                            <li>Reestruturação Organizacional</li>
+                        </ul>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal__product" tabindex="-1" aria-hidden="true" id="modalService3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="assets/img/icon-close.svg" class="icon" alt="Fechar">
+                    </button>
+                    <div class="modal-body">
+                        <div class="modal__heading">
+                            <p class="description">A PRÁVIA oferece soluções integradas e personalizadas em cinco grandes territórios de atuação, sempre com foco em transformar desafios em resultados concretos:</p>
+                        </div>
+                        
+                        <ul class="features__list">
+                            <h3 class="title__list">3. Ganhos de eficiência e produtividade</h3>
+                            <li>Melhoria de Processos</li>
+                            <li>Produtividade e Eficiência</li>
+                            <li>Aceleração de vendas</li>
+                            <li>Centralidade no cliente</li>
+                            <li>Go To Market</li>
+                            <li>Performance Comercial</li>
+                            <li>S&OP</li>
+                            <li>Data Analytics</li>
+                        </ul>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal__product" tabindex="-1" aria-hidden="true" id="modalService4">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="assets/img/icon-close.svg" class="icon" alt="Fechar">
+                    </button>
+                    <div class="modal-body">
+                        <div class="modal__heading">
+                            <p class="description">A PRÁVIA oferece soluções integradas e personalizadas em cinco grandes territórios de atuação, sempre com foco em transformar desafios em resultados concretos:</p>
+                        </div>
+                        
+                        <ul class="features__list">
+                            <h3 class="title__list">4. Novas alavancas de crescimento</h3>
+                            <li>Novos negócios</li>
+                            <li>Integração Negócio/Tecnologia</li>
+                            <li>Frameworks e Pipeline de Inovação</li>
+                            <li>Roadmaps digitais</li>
+                        </ul>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade modal__product" tabindex="-1" aria-hidden="true" id="modalService5">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="assets/img/icon-close.svg" class="icon" alt="Fechar">
+                    </button>
+                    <div class="modal-body">
+                        <div class="modal__heading">
+                            <p class="description">A PRÁVIA oferece soluções integradas e personalizadas em cinco grandes territórios de atuação, sempre com foco em transformar desafios em resultados concretos:</p>
+                        </div>
+                        
+                        <ul class="features__list">
+                            <h3 class="title__list">5. Excelência de execução</h3>
+                            <li>Agilidade</li>
+                            <li>Governança</li>
+                            <li>PMO/Gestão Projeto</li>
+                        </ul>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section class="page__steps">
@@ -352,59 +485,128 @@
             <img src="assets/img/steps.png" class="bg-steps" alt="A">
     </section>
 
-    <!--<footer class="page__footer">
+    <section class="page__testimonials" id="quemjaajudamos">
+        <h2 class="title">QUEM JÁ AJUDAMOS</h2>
+        <div class="carousel">
+            <div class="owl-carousel owl-themes testimonials__carousel">
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-1.png" class="logo__carousel mx-auto" alt="Natura"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-2.png" class="logo__carousel mx-auto" alt="TOTVS"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-3.png" class="logo__carousel mx-auto" alt="Gol"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-4.png" class="logo__carousel mx-auto" alt="Cielo"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-5.png" class="logo__carousel mx-auto" alt="Romi"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-6.png" class="logo__carousel mx-auto" alt="Suzano"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-7.png" class="logo__carousel mx-auto" alt="Nutrien"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-8.png" class="logo__carousel mx-auto" alt="Plug and Play"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-9.png" class="logo__carousel mx-auto" alt="Itubombas"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-10.png" class="logo__carousel mx-auto" alt="Bunge"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-11.png" class="logo__carousel mx-auto" alt="Radar"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-12.png" class="logo__carousel mx-auto" alt="GeoMarítima"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-13.png" class="logo__carousel mx-auto" alt="dsm-firmenich"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-14.png" class="logo__carousel mx-auto" alt="Ultragaz"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-15.png" class="logo__carousel mx-auto" alt="Loja do Mecânico"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-16.png" class="logo__carousel mx-auto" alt="Grupo Hinode"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-17.png" class="logo__carousel mx-auto" alt="Tupperware"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-18.png" class="logo__carousel mx-auto" alt="Isa CTEEP"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-19.png" class="logo__carousel mx-auto" alt="Banco Pan"></div>
+                </div>
+                <div class="item">
+                    <div class="logo mx-auto"><img src="assets/img/customer-20.png" class="logo__carousel mx-auto" alt="Ultragaz"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer class="page__footer" id="contato">
         <div class="footer__content">
             <div class="wrapper">
-                <div class="footer__links">
+                <div class="footer__heading">
                     <a href="index.html" class="link__logo" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/img/logo-header.png" class="link__footer" alt="Logo F.Viegas">
+                        <img src="assets/img/logo.png" class="link__footer" alt="Logo Právia">
                     </a>
+                    <p class="description">Entre em contato conosco e descubra como sua empresa pode alcançar resultados extraordinários</p>
                 </div>
-                <div class="footer__nav">
-                    <div class="col--1">
-                        <a href="#inicio" class="nav__link">Início</a>
-                        <a href="#beneficios" class="nav__link">Benefícios</a>
-                        <a href="#portfolio" class="nav__link">Portfólio</a>
+                <div class="contacts">
+                    <h2 class="title">Contato</h2>
+                    <div class="contact__links">
+                        <a href="https://www.pravia.com.br/" class="link" target="_blank" rel="noopener noreferrer">
+                            <div class="contact__icon">
+                                <img src="assets/img/icon-footer-1.svg" class="icon" alt="Site Právia">
+                            </div>
+                            pravia.com.br
+                        </a>
+                        <a href="mailto:contato@pravia.com.br" class="link" target="_blank" rel="noopener noreferrer">
+                            <div class="contact__icon">
+                                <img src="assets/img/icon-footer-2.svg" class="icon" alt="Email Právia">
+                            </div>
+                            contato@pravia.com.br
+                        </a>
+                        <a href="https://www.linkedin.com/company/pravia-consultoria" class="link" target="_blank" rel="noopener noreferrer">
+                            <div class="contact__icon">
+                                <img src="assets/img/icon-footer-3.svg" class="icon" alt="Linkedin Právia">
+                            </div>
+                            linkedin.com/company/pravia-consultoria
+                        </a>  
+                        <a href="http://wa.me/5511942940155" class="link" target="_blank" rel="noopener noreferrer">
+                            <div class="contact__icon">
+                                <img src="assets/img/icon-whats.svg" class="icon" alt="whatsapp">
+                            </div>
+                            (11) 94294-0155
+                        </a>                          
                     </div>
-                    <div class="col--2">                        
-                        <a href="#comofunciona" class="nav__link">Como Funciona</a>
-                        <a href="#sobre" class="nav__link">Sobre mim</a>
-                        <a href="#depoimentos" class="nav__link">Depoimentos</a>
-                    </div>
                 </div>
-
-                <div class="contact">
-                    <a href="http://wa.me/5551989743363" class="contact__link" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="assets/img/icon-whats-orange.svg" class="icon" alt="Telefone">
-                        (51) 98974-3363
-                    </a>
-                    <a href="mailto:fabicviegas@gmail.com" class="contact__link" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="assets/img/icon-mail.svg" class="icon" alt="Email">
-                        fabicviegas@gmail.com
-                    </a>
-                    <a href="https://maps.app.goo.gl/Sa5BJF6bricfZzDn8" class="contact__link" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="assets/img/icon-location.svg" class="icon" alt="Localização">
-                        Tramandaí - RS
-                    </a>
-                </div>
-
-                <p class="time">
-                    <img src="assets/img/icon-clock.svg" class="icon" alt="Horário">
-                    Seg a Sex<br>
-                    09:00 às 22:00
-                </p>
             </div>
         </div>
 
         <div class="footer__copyrights">
-            <p class="copyright">F. Viegas Web Designer 2025. Todos os direitos reservados.</p>
+            <div class="wrapper__copyrights">
+                <p class="copyright">Právia 2025. Todos os direitos reservados.</p>
+                <a href="https://fabiviegas.github.io/portfolio/" class="developer" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/logo-fabi.png" class="dev__logo" alt="Logo F. Viegas Web Designer">
+                </a>
+            </div>
         </div>
-    </footer>!-->
+    </footer>
 
-    <a href="http://wa.me/5551989743363" class="float__whatsapp" target="_blank" rel="noopener noreferrer">
+    <a href="http://wa.me/5511942940155" class="float__whatsapp" target="_blank" rel="noopener noreferrer">
         <img src="assets/img/icon-whats.svg" alt="whatsapp">
     </a>
 
@@ -422,9 +624,12 @@
 
         $('.testimonials__carousel').owlCarousel({
             loop: false,
-            nav: false,
+            nav: true,
             dots: true,
-            stagePadding: 20,
+            navText: [
+                '<span class="owl-nav-btn"><img src="assets/img/chevron-carousel-1.svg" alt="Anterior"></span>',
+                '<span class="owl-nav-btn"><img src="assets/img/chevron-carousel-2.svg" alt="Próximo"></span>'
+            ],
 
             responsive: {
                 0: {
@@ -442,39 +647,14 @@
 
                 620: {
                     loop: true,
-                    items: 1,
+                    items: 2,
                     stagePadding: 130,
                 },
 
-                720: {
-                    loop: true,
-                    items: 1,
-                    stagePadding: 150,
-                },
-
-                850: {
-                    loop: true,
-                    items: 1,
-                    stagePadding: 230,
-                },
-
-                1100: {
-                    loop: false,
-                    items: 1.5,
-                    stagePadding: 20,
-                },
-
-                1200: {
-                    items: 1.8,
-                    margin: 24,
-                },
                 1360: {
-                    items: 2.3,
-                    margin: 24,
+                    items: 5,
+                    margin: 20,
                 },
-                1400: {
-                    items: 2.4,
-                }
             }
         });
 

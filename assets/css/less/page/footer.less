@@ -8,101 +8,116 @@
 
         .wrapper {
             display: flex;
-            justify-content: space-between;
+            align-items: center;
+            gap: 280px;
             max-width: 1168px;
             margin: 0 auto;
             padding: 0 24px;
 
-            .footer__links {
+            .footer__heading {
                 display: flex;                    
                 flex-direction: column;
-                gap: 12px;
+                gap: 24px;
 
                 .link__logo {
-                    width: 200px;
+                    width: 280px;
 
                     .link__footer {
                         width: 100%;
                     }
                 } 
+
+                .description {
+                    width: 375px;
+                    font-size: 18px;
+                }
             }
 
-            .footer__nav {
+            .contacts {
                 display: flex;
-                gap: 86px;
+                flex-direction: column;
+                gap: 20px;
 
-                .col--1,
-                .col--2 {
+                .title {
+                    color: #519397;
+                    font-size: 24px;
+                    font-weight: 700;
+                    letter-spacing: 0.8px;
+                    text-transform: uppercase;
+                }
+
+                .contact__links {
                     display: flex;
                     flex-direction: column;
-                    gap: 20px;
+                    gap: 12px;
 
-                    .nav__link {
-                        color: #2E353B;
+                    .link {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        color: #274665;
                         font-size: 16px;
                         font-weight: 400;
                         transition: all linear .15s;
-    
+
+                        .contact__icon {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 24px;
+                            height: 24px;
+                            background-color: #07A096;
+                            border-radius: 100%;
+
+                            .icon {                            
+                                width: 18px;
+                            }
+                        }                        
+
                         &:hover {
-                            color: #FF8C39;
+                            color: #519397;
                             cursor: pointer;
+
+                            .contact__icon {
+                                background-color: #19afa5;
+                            }
                         }
-                    }
-                }                
-            }
-
-            .contact {
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
-
-                .contact__link {
-                    display: flex;
-                    align-items: center;
-                    gap: 12px;
-                    font-size: 16px;
-                    font-weight: 400;
-                    transition: all linear .15s;
-                    color: #222;
-
-                    .icon__contact {
-                        width: fit-content;
-                    }                   
-
-                    &:hover {
-                        color: #FF8C39;
-                        cursor: pointer;
-                    }
-                    
-                }                
-            }
-
-            .time {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                color: #222;
-                font-size: 16px;
-                line-height: 149%;
-
-                .icon {
-                    width: fit-content;
+                    } 
                 }
-            }            
+
+                               
+            }      
         }
     }
 
     .footer__copyrights {
-        background-color: #2E353B;
+        background-color: #274665; 
         margin: 0 auto;
-        padding: 30px 24px;
+        padding: 18px 24px;
 
-        .copyright {
-            font-size: 16px;
-            line-height: 134%;
-            font-weight: 400;
-            color: #FFF;
-            text-align: center;
+        .wrapper__copyrights {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1168px;
+            margin: 0 auto;
+            padding: 0 24px;
+
+            .copyright {
+                font-size: 16px;
+                color: #F7F7F7;
+                line-height: 134%;
+                font-weight: 400;
+                text-align: center;
+            }
+
+            .developer {
+                width: 150px;
+
+                .dev__logo {
+                    width: 100%;
+                }
+            }
         }
     }
 
