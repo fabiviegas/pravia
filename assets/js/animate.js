@@ -1,32 +1,58 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const elements = document.querySelectorAll(".animate-on-scroll");
+document.addEventListener("DOMContentLoaded", () => {
 
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const el = entry.target;
+  /* ===============================
+     SCROLL NORMAL
+  =============================== */
 
-          // Evita reprocessar
-          if (el.dataset.animated) return;
-          el.dataset.animated = "true";
+  const normalItems = document.querySelectorAll(".animate-on-scroll");
 
-          // Mostra antes de animar
-          el.style.opacity = 1;
+  const normalObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
 
-          // força repaint pra evitar piscar
-          void el.offsetWidth;
+      const el = entry.target;
+      if (el.dataset.animated) return;
 
-          el.classList.add("animate__animated");
-          observer.unobserve(el);
-        }
+      el.dataset.animated = "true";
+
+      const anim = el.dataset.anim;
+      if (!anim) return;
+
+      el.classList.add("animate__animated", anim);
+      normalObserver.unobserve(el);
+    });
+  }, { threshold: 0.25 });
+
+  normalItems.forEach(el => normalObserver.observe(el));
+
+  /* ===============================
+     STAGGER — STEPS
+  =============================== */
+
+  const stepsSection = document.querySelector(".page__steps");
+  if (!stepsSection) return;
+
+  const steps = stepsSection.querySelectorAll(".animate-stagger");
+  let hasAnimated = false;
+
+  const stepsObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting || hasAnimated) return;
+
+      hasAnimated = true;
+
+      steps.forEach((step, index) => {
+        const anim = step.dataset.anim;
+        if (!anim) return;
+
+        step.style.animationDelay = `${index * 0.35}s`;
+        step.classList.add("animate__animated", anim);
       });
-    },
-    {
-      threshold: 0.1,
-      rootMargin: "0px 0px -20% 0px"
-    }
-  );
 
-  elements.forEach(el => observer.observe(el));
+      stepsObserver.disconnect();
+    });
+  }, { threshold: 0.35 });
+
+  stepsObserver.observe(stepsSection);
+
 });

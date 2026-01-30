@@ -220,8 +220,11 @@ nav {
     width: 40px;
   }
 }
-.animate-on-scroll {
+.animate-stagger {
   opacity: 0;
+}
+.animate-stagger.animate__animated {
+  opacity: 1;
 }
 @keyframes effect--fade_in_right {
   0% {
@@ -427,6 +430,7 @@ nav {
   background-size: 50% 100%, calc(50% + 1px) 100%;
   background-position: left top, right top;
   padding-top: 42px;
+  height: 600px;
 }
 .page__name .title {
   margin-bottom: 42px;
