@@ -66,7 +66,8 @@
                             justify-content: center;
                             width: 24px;
                             height: 24px;
-                            background-color: #07A096;
+                            flex-shrink: 0;
+                            background-color: #274665;
                             border-radius: 100%;
 
                             .icon {                            
@@ -79,7 +80,7 @@
                             cursor: pointer;
 
                             .contact__icon {
-                                background-color: #19afa5;
+                                background-color: #519397;
                             }
                         }
                     } 
@@ -112,7 +113,7 @@
             }
 
             .developer {
-                width: 150px;
+                width: 120px;
 
                 .dev__logo {
                     width: 100%;
@@ -121,54 +122,57 @@
         }
     }
 
-    @media screen and (max-width: 1200px) {
+    @media (max-width: @tablet) {
         .footer__content {
             .wrapper {
                 flex-direction: column;
                 align-items: center;
                 gap: 42px;
 
-                .footer__links {
+                .footer__heading {
                     align-items: center;
 
-                    .links__social {
-                        margin-left: 0;
+                    .link__logo {
+                        width: 210px;
                     }
-                }
 
-                .footer__nav {
-                    align-items: center;
-                    flex-direction: column;
-                    gap: 20px;
-
-                    .col--1,
-                    .col--2 {
-                        align-items: center;
+                    .description {
+                        width: 100%;
                         text-align: center;
+                        font-size: 16px;
                     }
                 }
 
-                .contact {
+                .contacts {
                     align-items: center;
-                    text-align: center;
+                    width: 210px;
+
+                    .title {
+                        text-align: center;
+                    }                  
                 }
 
-                .time {
-                    align-items: center;
-                    text-align: center;
-                }
+                
             }
         }
 
         .footer__copyrights {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 32px;
 
-            .copyright {
-                padding: 0 24px;
+            .wrapper__copyrights {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 32px;
+
+                .copyright {
+                    padding: 0 24px;
+                }
+
+                .developer {
+                    width: 100px;
+                }
             }
+            
         }
            
     }

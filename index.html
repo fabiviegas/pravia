@@ -96,7 +96,7 @@
                     <div class="overlay__content">
 
                         <div class="overlay__header">
-                            <img src="assets/img/icon-close.svg" alt="Fechar" class="overlay__close"></img>
+                            <img src="assets/img/icon-close-white.svg" alt="Fechar" class="overlay__close"></img>
                         </div>
 
                         <div class="container d-flex flex-column align-items-center overlay__menu">
@@ -114,14 +114,32 @@
                                 <a href="#contato" class="text-center mobile__anchor">
                                     Contato
                                 </a>
-                            </nav>
-
-                            <a href="http://wa.me/55" class="button" target="_blank"
-                                rel="noopener noreferrer">
-                                <img src="assets/img/icon-whats.svg" class="icon" alt="Whatsapp Právia">                                
-                            </a>
+                            </nav>                           
 
                         </div>
+
+                        <div class="contact__links">
+                            <a href="https://www.pravia.com.br/" class="link" target="_blank" rel="noopener noreferrer">
+                                <div class="contact__icon">
+                                    <img src="assets/img/icon-footer-1.svg" class="icon" alt="Site Právia">
+                                </div>
+                            </a>
+                            <a href="mailto:contato@pravia.com.br" class="link" target="_blank" rel="noopener noreferrer">
+                                <div class="contact__icon">
+                                    <img src="assets/img/icon-footer-2.svg" class="icon" alt="Email Právia">
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/company/pravia-consultoria" class="link" target="_blank" rel="noopener noreferrer">
+                                <div class="contact__icon">
+                                    <img src="assets/img/icon-footer-3.svg" class="icon" alt="Linkedin Právia">
+                                </div>
+                            </a>  
+                            <a href="http://wa.me/5511942940155" class="link" target="_blank" rel="noopener noreferrer">
+                                <div class="contact__icon">
+                                    <img src="assets/img/icon-whats.svg" class="icon" alt="whatsapp">
+                                </div>
+                            </a>                          
+                    </div>
                     </div>
 
                 </div>
@@ -557,10 +575,10 @@
     </section>
 
 
-    <section class="page__testimonials" id="quemjaajudamos">
+    <section class="page__customers" id="quemjaajudamos">
         <h2 class="title">QUEM JÁ AJUDAMOS</h2>
         <div class="carousel">
-            <div class="owl-carousel owl-themes testimonials__carousel">
+            <div class="owl-carousel owl-themes customers__carousel">
                 <div class="item">
                     <div class="logo mx-auto"><img src="assets/img/customer-1.png" class="logo__carousel mx-auto" alt="Natura"></div>
                 </div>
@@ -694,10 +712,11 @@
     <script src="assets/libs/owl.carousel.min.js"></script>
     <script>
 
-        $('.testimonials__carousel').owlCarousel({
+        $('.customers__carousel').owlCarousel({
             loop: true,
             nav: true,
             dots: true,
+            dotsEach: 5,
             navText: [
                 '<span class="owl-nav-btn"><img src="assets/img/chevron-carousel-1.svg" alt="Anterior"></span>',
                 '<span class="owl-nav-btn"><img src="assets/img/chevron-carousel-2.svg" alt="Próximo"></span>'
@@ -705,15 +724,15 @@
 
             responsive: {
                 0: {
-                    items: 1,
+                    items: 2,
                     margin: 15,
                     loop: true,
-                    stagePadding: 50,
+                    stagePadding: 30,
                 },
 
                 500: {
                     loop: true,
-                    items: 1,
+                    items: 3,
                     stagePadding: 90,
                 },
 
@@ -726,6 +745,7 @@
                 1360: {
                     items: 5,
                     margin: 20,
+                    dotsEach: 3,
                 },
             }
         });

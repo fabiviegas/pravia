@@ -53,6 +53,7 @@
                     align-items: center;
                     justify-content: center;
                     background-color: #becfd5;
+                    flex-shrink: 0;
                     width: 56px;
                     height: 56px;
                     border-radius: 100%;
@@ -192,6 +193,106 @@
                      .step__content {
                          width: 316px;
                      }
+                }
+            }
+        }
+    }
+
+    @media (max-width: @tablet) {
+        padding: 60px 0;
+
+        .wrapper {
+            height: auto;
+
+            .title { 
+                font-size: 28px;
+                font-weight: 700;
+                letter-spacing: normal;
+                margin-top: 0;
+                margin-bottom: 24px;
+                text-align: center;
+            }
+
+            .description {
+                font-size: 18px;
+                line-height: 136%;
+                width: 100%;
+                margin-bottom: 42px;
+                text-align: center;
+            }
+
+            .bg-steps {
+                width: 100%;
+                top: 280px;
+                left: 0;
+                opacity: 0.1;
+                z-index: 0;
+            }   
+
+            .step {
+
+                .content {
+                    display: flex;
+                    gap: 10px;
+
+                    .number {
+                        position: static;
+                        width: 46px;
+                        height: 46px;
+                        border-radius: 100%;
+                        z-index: 3;
+                        
+                        .number__img {
+                            width: 28px;
+                        }
+                    }
+
+                    .line {
+                        display: none;
+                    }
+
+                    .arrow {
+                        display: none;
+                    }    
+
+                    .step__content {
+                        margin-bottom: 32px;
+                        
+                         .step__title {
+                            font-size: 22px;
+                            margin-bottom: 2px;
+                            padding-bottom: 2px;
+                            border-bottom: 2px solid #becfd5;
+                        }
+
+                        .step__subtitle {
+                            font-size: 16px;
+                            line-height: 132%;
+                            margin-bottom: 6px;
+                        }
+
+                        .step__text {
+                            font-size: 14px;
+                            line-height: 130%;
+                        }
+                    }                   
+                   
+                }
+
+                &.step-1,
+                &.step-2,
+                &.step-3 {
+                    width: 100%;
+                    height: auto;
+                    position: static;
+
+                    .content {
+                        width: 100%;
+
+                        .step__content {
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
