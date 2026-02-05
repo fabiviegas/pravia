@@ -589,21 +589,19 @@ nav {
     font-size: 42px;
     text-align: center;
     margin-right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: #F7F7F7;
-    font-weight: 900;
-    line-height: 88%;
   }
-  .page__name .wrapper .content--mobile .name__definition .name span {
+  .page__name .wrapper .content--mobile .name__definition .name .syllable {
+    font-weight: 900;
+    line-height: normal;
+  }
+  .page__name .wrapper .content--mobile .name__definition .name .plus {
     font-weight: 700;
   }
   .page__name .wrapper .content--mobile .name__definition .definition {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
   }
   .page__name .wrapper .content--mobile .name__definition .definition .word {
     font-size: 24px;
