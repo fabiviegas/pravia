@@ -576,7 +576,7 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    width: 358px;
+    max-width: 358px;
     margin: 0 auto;
   }
   .page__name .wrapper .content--mobile .name__definition {
@@ -600,9 +600,10 @@ nav {
     font-weight: 700;
   }
   .page__name .wrapper .content--mobile .name__definition .definition {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 10px;
   }
   .page__name .wrapper .content--mobile .name__definition .definition .word {
     font-size: 24px;
@@ -721,7 +722,7 @@ nav {
     align-items: center;
   }
   .page__team .wrapper .content .title {
-    margin-top: 0;
+    margin-top: 60px;
     margin-bottom: 28px;
     padding: 0 16px;
     text-align: center;
