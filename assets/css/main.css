@@ -830,7 +830,11 @@ nav {
 .page__services .wrapper .title__services {
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.page__services .wrapper .description {
   margin-bottom: 12px;
+  max-width: 710px;
 }
 .page__services .wrapper .services__list--desktop {
   background-image: url('../img/services-bg.png');
@@ -978,7 +982,11 @@ nav {
     font-size: 24px;
     text-align: center;
     letter-spacing: normal;
-    margin-bottom: 32px;
+    margin-bottom: 12px;
+  }
+  .page__services .wrapper .description {
+    text-align: center;
+    margin-bottom: 24px;
   }
   .page__services .wrapper .services__list--desktop {
     background-image: url('../img/services-bg-mobile.png');
