@@ -624,7 +624,7 @@ nav {
   }
 }
 .page__team {
-  padding: 72px 16px 0 16px;
+  padding: 0 16px;
 }
 .page__team .wrapper {
   max-width: 1275px;
@@ -645,6 +645,7 @@ nav {
   text-transform: uppercase;
   width: 210px;
   flex-shrink: 0;
+  padding-top: 72px;
 }
 .page__team .wrapper .content .team__cards--desktop {
   display: flex;
@@ -710,7 +711,7 @@ nav {
 }
 @media (max-width: 900px) {
   .page__team {
-    padding: 60px 0 60px 0;
+    padding: 0 0 60px 0;
   }
   .page__team .wrapper {
     padding: 0;
@@ -810,7 +811,6 @@ nav {
   }
 }
 .page__services {
-  padding: 72px 0;
   background-color: #F7F7F7;
 }
 .page__services .wrapper {
@@ -819,6 +819,7 @@ nav {
   padding: 0 16px;
 }
 .page__services .wrapper .title {
+  padding-top: 70px;
   color: #519397;
   font-size: 32px;
   font-weight: 700;
@@ -968,10 +969,10 @@ nav {
 }
 @media (max-width: 900px) {
   .page__services {
-    padding-top: 50px;
     padding-bottom: 92px;
   }
   .page__services .wrapper .title {
+    padding-top: 80px;
     font-size: 28px;
     margin-bottom: 32px;
     text-align: center;
@@ -1137,6 +1138,7 @@ nav {
   margin-top: 20px;
   text-transform: uppercase;
   margin-bottom: 38px;
+  padding-top: 32px;
 }
 .page__steps .wrapper .description {
   font-size: 18px;
@@ -1366,12 +1368,12 @@ nav {
   }
 }
 .page__customers {
-  padding-top: 100px;
   padding-bottom: 100px;
   overflow-x: hidden;
   background-color: #F7F7F7;
 }
 .page__customers .title {
+  padding-top: 100px;
   color: #519397;
   text-align: center;
   font-size: 32px;
@@ -1438,13 +1440,13 @@ nav {
 }
 @media (max-width: 900px) {
   .page__customers {
-    padding-top: 70px;
     padding-bottom: 70px;
   }
   .page__customers .title {
     font-size: 28px;
     letter-spacing: normal;
     margin-bottom: 50px;
+    padding-top: 70px;
   }
   .page__customers .carousel .owl-carousel.owl-themes.customers__carousel .owl-nav {
     display: none;
