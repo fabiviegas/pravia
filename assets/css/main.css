@@ -383,87 +383,148 @@ nav {
     display: none;
   }
 }
-.page__hero {
-  background-image: url('../img/hero-bg.png');
-  background-repeat: no-repeat;
-  background-position: bottom 0 right;
-  background-size: 50% auto;
-}
 .page__hero .wrapper {
-  margin: 0 16px 0 16px;
-  padding: 220px 90px 42px 90px;
+  padding-top: 70px;
 }
 .page__hero .wrapper .content {
   width: 100%;
+  /*.description {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                max-width: 600px;
+                width: 100%;
+                margin-bottom: 32px;
+
+                .description__text {
+                    display: flex;
+                    align-items: center;
+                    gap: 32px;
+
+                    .icon {
+                        width: 92px;
+                    }
+
+                    .text {
+                        font-size: 16px;
+                        line-height: 134%;
+
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+
+                }
+            }*/
 }
-.page__hero .wrapper .content .title {
-  max-width: 636px;
+.page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .item {
+  height: 580px;
+}
+.page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel .image {
+  height: 100%;
   width: 100%;
-  font-size: 24px;
+  object-fit: cover;
+}
+.page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel .text {
+  flex: 0 0 49.3%;
+  max-width: 50%;
+  font-size: 36px;
   font-weight: 400;
   line-height: 136%;
-  margin-bottom: 60px;
+  padding-left: 10%;
 }
-.page__hero .wrapper .content .title span {
+.page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel .text span {
   font-weight: 700;
   background-color: #a8d7da;
 }
-.page__hero .wrapper .content .description {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  max-width: 600px;
-  width: 100%;
-  margin-bottom: 32px;
-}
-.page__hero .wrapper .content .description .description__text {
-  display: flex;
-  align-items: center;
+.page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-2 {
   gap: 32px;
 }
-.page__hero .wrapper .content .description .description__text .icon {
-  width: 92px;
+.page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-2 .text {
+  font-size: 28px;
+  max-width: 610px;
+  padding-left: 0;
+  padding-right: 15%;
 }
-.page__hero .wrapper .content .description .description__text .text {
-  font-size: 16px;
-  line-height: 134%;
-}
-.page__hero .wrapper .content .description .description__text .text span {
+.page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-2 .text span {
   font-weight: 700;
+  background-color: transparent;
+}
+.page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-3 .text {
+  font-size: 28px;
+}
+.page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-3 .text span {
+  font-weight: 700;
+  background-color: transparent;
 }
 @media (max-width: 900px) {
-  .page__hero {
-    background-image: url('../img/hero-bg-mobile.png');
-    background-size: 100% auto;
-    background-position: bottom 0 right 0;
-  }
   .page__hero .wrapper {
-    padding: 132px 0 304px 0;
+    padding-top: 130px;
   }
-  .page__hero .wrapper .content .title {
-    font-size: 20px;
-    margin-bottom: 32px;
-    max-width: 100%;
-    text-align: center;
+  .page__hero .wrapper .content {
+    /*.description {
+                    max-width: 100%;
+                    gap: 24px;
+
+                    .description__text {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 12px;
+
+                        .icon {
+                            width: 62px;
+                        }
+
+                        .text {
+                            font: 14px;
+                            text-align: center;
+                        }
+
+                        br {
+                            display: none;
+                        }
+                    }
+                }*/
   }
-  .page__hero .wrapper .content .description {
-    max-width: 100%;
-    gap: 24px;
+  .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .item {
+    height: 606px;
   }
-  .page__hero .wrapper .content .description .description__text {
+  .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel {
     flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-  .page__hero .wrapper .content .description .description__text .icon {
-    width: 62px;
-  }
-  .page__hero .wrapper .content .description .description__text .text {
-    font: 14px;
     text-align: center;
+    justify-content: space-between;
   }
-  .page__hero .wrapper .content .description .description__text br {
-    display: none;
+  .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel .image {
+    width: 100%;
+    height: auto;
+  }
+  .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel .text {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    width: 100%;
+    padding: 0 24px;
+    font-size: 24px;
+  }
+  .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-1 .text {
+    margin-bottom: 42px;
+  }
+  .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-2 {
+    flex-direction: column-reverse;
+  }
+  .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-2 .text {
+    font-size: 20px;
+    width: 100%;
+    padding: 0 24px;
+  }
+  .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-3 .text {
+    font-size: 20px;
+    width: 100%;
+    padding: 0 24px;
   }
 }
 .page__name {

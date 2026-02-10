@@ -1,33 +1,73 @@
 //out: false
 
 .page__hero {
-    background-image: url('../img/hero-bg.png');
-    background-repeat: no-repeat;
-    background-position: bottom 0 right;
-    background-size: 50% auto;
-
-    .wrapper {
-        margin: 0 16px 0 16px;
-        padding: 220px 90px 42px 90px;
+    
+    .wrapper {        
+        padding-top: 70px;
 
         .content {            
-            width: 100%;
+            width: 100%;            
 
-            .title {
-                max-width: 636px;
-                width: 100%;
-                font-size: 24px;
-                font-weight: 400;
-                line-height: 136%;
-                margin-bottom: 60px;
+            .owl-carousel.owl-theme.hero__carousel {
+                
+                .item {
+                    height: 580px;
+                }
 
-                span {
-                    font-weight: 700;
-                    background-color: #a8d7da;
-                }                
+                .content__carousel {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+
+                    .image {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+
+                    .text {
+                        flex: 0 0 49.3%;
+                        max-width: 50%;
+                        font-size: 36px;
+                        font-weight: 400;
+                        line-height: 136%;
+                        padding-left: 10%;
+
+                        span {
+                            font-weight: 700;
+                            background-color: #a8d7da;
+                        }  
+                    }
+
+                    &.content-2 {                        
+                        gap: 32px;
+                        .text {                            
+                            font-size: 28px;
+                            max-width: 610px;
+                            padding-left: 0;
+                            padding-right: 15%;
+
+                            span {
+                                font-weight: 700;
+                                background-color: transparent;
+                            }  
+                        }                        
+                    }
+
+                     &.content-3 {  
+                        .text {                                
+                            font-size: 28px;
+
+                            span {
+                                font-weight: 700;
+                                background-color: transparent;
+                            }  
+                        }
+                     }                        
+                }
             }
 
-            .description {
+            /*.description {
                 display: flex;
                 flex-direction: column;
                 gap: 32px;
@@ -54,28 +94,68 @@
                     }
 
                 }
-            }
+            }*/
         }
     }
 
     @media (max-width: @tablet) {
-        background-image: url('../img/hero-bg-mobile.png');
-        background-size: 100% auto;
-        background-position: bottom 0 right 0;
-
+        
         .wrapper {
-            padding: 132px 0 304px 0;
+            padding-top: 130px;
 
             .content {
 
-                .title {
-                    font-size: 20px;
-                    margin-bottom: 32px;
-                    max-width: 100%;
-                    text-align: center;
+                .owl-carousel.owl-theme.hero__carousel {
+
+                    .item {
+                        height: 606px;
+                    }
+                    
+                    .content__carousel {
+                        flex-direction: column;
+                        text-align: center;
+                        justify-content: space-between;
+
+                        .image {
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        .text {
+                            flex: 1 1 100% !important;
+                            max-width: 100% !important;
+                            width: 100%;
+                            padding: 0 24px;
+                            font-size: 24px;
+                        }
+
+                        &.content-1 {
+                            .text {
+                                margin-bottom: 42px;
+                            }
+                        }
+
+                        &.content-2 {  
+                            flex-direction: column-reverse;                            
+
+                            .text {                            
+                                font-size: 20px;
+                                width: 100%;
+                                padding: 0 24px; 
+                            }                        
+                        }
+
+                         &.content-3 {  
+                            .text {                                
+                                font-size: 20px;
+                                width: 100%;
+                                padding: 0 24px;
+                            }
+                         } 
+                    }
                 }
 
-                .description {
+                /*.description {
                     max-width: 100%;
                     gap: 24px;
 
@@ -97,7 +177,7 @@
                             display: none;
                         }
                     }
-                }
+                }*/
             }
         }
 
