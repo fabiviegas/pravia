@@ -492,7 +492,7 @@ nav {
                 }*/
   }
   .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .item {
-    height: 645px;
+    height: 510px;
   }
   .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel {
     flex-direction: column;
@@ -510,20 +510,23 @@ nav {
     max-width: 100% !important;
     width: 100%;
     padding: 0 24px;
-    font-size: 32px;
+    font-size: 28px;
     position: relative;
     z-index: 2;
   }
   .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-1 .text {
-    font-size: 32px;
+    font-size: 28px;
+  }
+  .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-2 {
+    gap: 0;
   }
   .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-2 .text {
-    font-size: 32px;
+    font-size: 28px;
     width: 100%;
     padding: 0 24px;
   }
   .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-3 .text {
-    font-size: 32px;
+    font-size: 28px;
     width: 100%;
     padding: 0 24px;
   }
