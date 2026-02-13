@@ -464,7 +464,7 @@ nav {
 }
 @media (max-width: 900px) {
   .page__hero .wrapper {
-    padding-top: 130px;
+    padding-top: 176px;
   }
   .page__hero .wrapper .content {
     /*.description {
@@ -492,37 +492,38 @@ nav {
                 }*/
   }
   .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .item {
-    height: 606px;
+    height: 645px;
   }
   .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel {
     flex-direction: column;
     text-align: center;
-    justify-content: space-between;
+    position: relative;
   }
   .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel .image {
     width: 100%;
-    height: auto;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
   }
   .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel .text {
-    flex: 1 1 100% !important;
     max-width: 100% !important;
     width: 100%;
     padding: 0 24px;
-    font-size: 24px;
+    font-size: 32px;
+    position: relative;
+    z-index: 2;
   }
   .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-1 .text {
-    margin-bottom: 42px;
-  }
-  .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-2 {
-    flex-direction: column-reverse;
+    font-size: 32px;
   }
   .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-2 .text {
-    font-size: 20px;
+    font-size: 32px;
     width: 100%;
     padding: 0 24px;
   }
   .page__hero .wrapper .content .owl-carousel.owl-theme.hero__carousel .content__carousel.content-3 .text {
-    font-size: 20px;
+    font-size: 32px;
     width: 100%;
     padding: 0 24px;
   }

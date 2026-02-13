@@ -101,45 +101,48 @@
     @media (max-width: @tablet) {
         
         .wrapper {
-            padding-top: 130px;
+            padding-top: 176px;
 
             .content {
 
                 .owl-carousel.owl-theme.hero__carousel {
 
                     .item {
-                        height: 606px;
+                        height: 645px;
                     }
                     
                     .content__carousel {
                         flex-direction: column;
                         text-align: center;
-                        justify-content: space-between;
+                        position: relative;
 
                         .image {
                             width: 100%;
-                            height: auto;
+                            position: absolute;
+                            z-index: 1;
+                            bottom: 0;
+                            left: 0;
                         }
 
                         .text {
-                            flex: 1 1 100% !important;
                             max-width: 100% !important;
                             width: 100%;
                             padding: 0 24px;
-                            font-size: 24px;
+                            font-size: 32px;
+                            position: relative;
+                            z-index: 2;
                         }
 
                         &.content-1 {
                             .text {
-                                margin-bottom: 42px;
+                                font-size: 32px;
                             }
                         }
 
-                        &.content-2 {  
-                            flex-direction: column-reverse;                            
+                        &.content-2 {                            
 
                             .text {                            
-                                font-size: 20px;
+                                font-size: 32px;
                                 width: 100%;
                                 padding: 0 24px; 
                             }                        
@@ -147,7 +150,7 @@
 
                          &.content-3 {  
                             .text {                                
-                                font-size: 20px;
+                                font-size: 32px;
                                 width: 100%;
                                 padding: 0 24px;
                             }
